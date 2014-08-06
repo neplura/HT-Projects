@@ -1,0 +1,85 @@
+﻿@model MvcWeb1.Models.Item
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Item</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Items_num)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Items_num)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Manufacturer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Manufacturer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Quantity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Quantity)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Inbound_date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Inbound_date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Outbound_date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Outbound_date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Creator)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Creator)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Modify_date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Modify_date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Editor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Editor)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
